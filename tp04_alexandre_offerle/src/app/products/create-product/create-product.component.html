@@ -1,0 +1,15 @@
+<p>create-product works!</p>
+
+<form [formGroup]="productForm">
+  <label>Name: <input type="text" formControlName="name" /></label>
+  <br />
+  <label>Desc: <input type="text" formControlName="description" /></label>
+  <br />
+  <label>Price: <input type="number" formControlName="price" /></label>
+
+  <button (click)="addProduct()">Creer</button>
+</form>
+
+<br />
+<hr />
+<app-product-list></app-product-list>

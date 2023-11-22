@@ -1,0 +1,7 @@
+<p>cart works!</p>
+<div *ngFor="let item of products">
+  <p>{{item.name}}</p>
+  <p>{{item.price}}</p>
+  <button (click)="deleteProduct(item)">delete From cart</button>
+  <hr />
+</div>
